@@ -18,4 +18,20 @@
     
      
      } 
+
+.flower > .flower-leaf:after {
+     content: ' '; 
+     display: inline-block; 
+     width: 100%; 
+     height: 100%; 
+     background-color: #A91079; border-radius: 60%; 
+     position: relative; 
+     left: 50%; 
      
+     } 
+     
+     .flower > .leaf-1 { 
+transform-origin: 0 0; 
+   
+     
+     }      
