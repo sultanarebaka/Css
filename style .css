@@ -1,2 +1,21 @@
 
 
+.flower {
+ width: 330px;
+ height: 330px; 
+ position: relative;
+  } 
+  
+ .flower > .flower-leaf
+   { 
+   width: 50%; 
+   height: 50%; 
+   position: absolute; 
+   border-radius: 60%;
+ background-color: transparent;
+    overflow: hidden;
+     top: 0; 
+    
+     
+     } 
+     
