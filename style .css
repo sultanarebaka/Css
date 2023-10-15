@@ -47,4 +47,21 @@ transform-origin: 0 0;
       .flower > .leaf-3 { transform-origin: 75% bottom; transform: rotate(144deg);
       
        } 
+
+     .flower > .leaf-4 { transform-origin: 75% bottom;
+} 
+       
+       .flower > .leaf-5 { transform-origin: 75% bottom; 
+       
+       }
+       
+       
+       
+       
+      
+ .flower > .flower-core { position: absolute; width: 5%; height: 5%; background-color: black; top: 47.5%;
+ left: 40.2%; border-radius: 60%; }
+
+
         
+           
