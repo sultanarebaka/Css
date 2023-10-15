@@ -63,5 +63,9 @@ transform-origin: 0 0;
  left: 40.2%; border-radius: 60%; }
 
 
+        .rotator:checked ~ .flower { animation: rotate 5s linear infinite; animation-play-state: play; }
         
+        
+         .rotator ~ .flower { animation: rotate 5s linear infinite; animation-play-state: paused; }
+          
            
