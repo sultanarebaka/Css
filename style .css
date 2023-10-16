@@ -1,75 +1,100 @@
 
 
-.flower {
- width: 330px;
+.flower { width: 330px;
  height: 330px; 
  position: relative;
   } 
   
- .flower > .flower-leaf
+  .flower > .flower-leaf
    { 
-   width: 50%; 
+   width: 40%; 
    height: 50%; 
    position: absolute; 
-   border-radius: 60%;
+   border-radius: 50%;
  background-color: transparent;
     overflow: hidden;
      top: 0; 
-    
+     left: 12.5%; 
      
      } 
-
-.flower > .flower-leaf:after {
-     content: ' '; 
+     
+     
+     .flower > .flower-leaf:after { content: ' '; 
      display: inline-block; 
      width: 100%; 
      height: 100%; 
-     background-color: #A91079; border-radius: 60%; 
+     background-color: #A91079; border-radius: 50%; 
      position: relative; 
      left: 50%; 
      
      } 
      
-     .flower > .leaf-1 { 
-transform-origin: 0 0; 
-   
-     }  
-
-
-   flower > .leaf-1 { transform-origin: 0 0; 
-  } 
+     .flower > .leaf-1 { transform-origin: 0 0; 
+     transform: rotate(0deg); 
+     
+     } 
      
      .flower > .leaf-2 { 
-     transform-origin: 75% bottom;
+     transform-origin: 75% bottom; transform: rotate(72deg);
       } 
       
       
       .flower > .leaf-3 { transform-origin: 75% bottom; transform: rotate(144deg);
       
        } 
-
-     .flower > .leaf-4 { transform-origin: 75% bottom;
+       
+       
+       .flower > .leaf-4 { transform-origin: 75% bottom; transform: rotate(216deg); 
 } 
        
-       .flower > .leaf-5 { transform-origin: 75% bottom; 
+       .flower > .leaf-5 { 
+transform-origin: 75% bottom; 
+transform: rotate(288deg); 
        
        }
        
+           
+ .flower > .flower-core {
+ position: absolute; 
+width: 5%; 
+height: 5%; 
+background-color: black; 
+top: 47.5%;
+ left: 40.2%; 
+border-radius: 60%; 
+}      
+        .rotator:checked ~ .flower { 
+animation: rotate 5s linear infinite; animation-play-state: play;
+ }
+        
+        
+   .rotator ~ .flower { 
+animation: rotate 5s linear infinite; animation-play-state: paused;
+ }
+         
+         
+          @keyframes rotate { 100% { transform: rotate(360deg); } }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      
        
        
        
       
- .flower > .flower-core { position: absolute; width: 5%; height: 5%; background-color: black; top: 47.5%;
- left: 40.2%; border-radius: 60%; }
-
-
-        .rotator:checked ~ .flower { animation: rotate 5s linear infinite; animation-play-state: play; }
-        
-        
-         .rotator ~ .flower { animation: rotate 5s linear infinite; animation-play-state: paused; }
-
-
-   @keyframes rotate { 100% { transform: rotate(360deg); } }
-
-        
-           
+ 
